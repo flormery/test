@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="D:\capachica-project\turismo-backend\phpunit.xml" tests="76" assertions="253" errors="9" failures="0" skipped="0" time="61.938130">
+    <testsuite name="Unit" tests="50" assertions="91" errors="9" failures="0" skipped="0" time="41.470049">
+      <testsuite name="Tests\Unit\ExampleTest" file="D:\capachica-project\turismo-backend\tests\Unit\ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.513527">
+        <testcase name="test_that_true_is_true" file="D:\capachica-project\turismo-backend\tests\Unit\ExampleTest.php" line="12" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" assertions="1" time="0.513527"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Models\AsociacionTest" file="D:\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" tests="5" assertions="7" errors="0" failures="0" skipped="0" time="8.065593">
+        <testcase name="puede_acceder_a_su_municipalidad" file="D:\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="17" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="2" time="4.831245"/>
+        <testcase name="puede_tener_varios_emprendedores" file="D:\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="29" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="2" time="0.646368"/>
+        <testcase name="devuelve_null_si_no_tiene_imagen" file="D:\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="41" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="1" time="0.889605"/>
+        <testcase name="devuelve_url_completa_si_imagen_es_una_url" file="D:\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="49" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="1" time="1.036713"/>
+        <testcase name="genera_url_correcta_si_imagen_es_ruta_local" file="D:\capachica-project\turismo-backend\tests\Unit\Models\AsociacionTest.php" line="58" class="Tests\Unit\Models\AsociacionTest" classname="Tests.Unit.Models.AsociacionTest" assertions="1" time="0.661662"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Models\EmprendedorTest" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" tests="18" assertions="26" errors="6" failures="0" skipped="0" time="13.940148">
+        <testcase name="puede_acceder_a_su_asociacion" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="20" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="2" time="1.003635"/>
+        <testcase name="puede_tener_varios_administradores" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="32" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="2" time="1.187083"/>
+        <testcase name="puede_obtener_administrador_principal" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="49" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="2" time="1.478120"/>
+        <testcase name="devuelve_null_si_no_hay_administrador_principal" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="72" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="1" time="0.858618"/>
+        <testcase name="puede_tener_varios_servicios" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="88" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="0" time="0.843754">
+          <error type="Error">Tests\Unit\Models\EmprendedorTest::puede_tener_varios_servicios&#13;
+Error: Class "Database\Factories\ServicioFactory" not found
+&#13;
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:870
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\HasFactory.php:21
+D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php:91</error>
+        </testcase>
+        <testcase name="puede_tener_varias_reservas" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="100" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="0" time="1.512279">
+          <error type="Error">Tests\Unit\Models\EmprendedorTest::puede_tener_varias_reservas&#13;
+Error: Class "Database\Factories\ReservaFactory" not found
+&#13;
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:870
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\HasFactory.php:21
+D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php:103</error>
+        </testcase>
+        <testcase name="puede_tener_varios_sliders" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="117" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="0" time="0.786665">
+          <error type="Error">Tests\Unit\Models\EmprendedorTest::puede_tener_varios_sliders&#13;
+Error: Class "Database\Factories\SliderFactory" not found
+&#13;
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:870
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\HasFactory.php:21
+D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php:120</error>
+        </testcase>
+        <testcase name="puede_obtener_sliders_principales" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="130" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="0" time="0.705569">
+          <error type="Error">Tests\Unit\Models\EmprendedorTest::puede_obtener_sliders_principales&#13;
+Error: Class "Database\Factories\SliderFactory" not found
+&#13;
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:870
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\HasFactory.php:21
+D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php:135</error>
+        </testcase>
+        <testcase name="puede_obtener_sliders_secundarios" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="152" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="0" time="0.435975">
+          <error type="Error">Tests\Unit\Models\EmprendedorTest::puede_obtener_sliders_secundarios&#13;
+Error: Class "Database\Factories\SliderFactory" not found
+&#13;
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:870
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\HasFactory.php:21
+D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php:157</error>
+        </testcase>
+        <testcase name="puede_tener_varios_eventos" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="174" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="0" time="0.406494">
+          <error type="BadMethodCallException">Tests\Unit\Models\EmprendedorTest::puede_tener_varios_eventos&#13;
+BadMethodCallException: Call to undefined method App\Models\Evento::factory()
+&#13;
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Support\Traits\ForwardsCalls.php:67
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Support\Traits\ForwardsCalls.php:36
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:2449
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:2465
+D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php:177</error>
+        </testcase>
+        <testcase name="cast_metodos_pago_como_array" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="186" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="2" time="0.432074"/>
+        <testcase name="cast_imagenes_como_array" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="198" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="2" time="0.445717"/>
+        <testcase name="cast_certificaciones_como_array" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="210" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="2" time="0.511466"/>
+        <testcase name="cast_idiomas_hablados_como_array" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="222" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="2" time="0.433241"/>
+        <testcase name="cast_opciones_acceso_como_array" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="234" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="2" time="0.794697"/>
+        <testcase name="cast_facilidades_discapacidad_como_boolean" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="246" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="4" time="0.575594"/>
+        <testcase name="cast_estado_como_boolean" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="264" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="4" time="0.881752"/>
+        <testcase name="usa_tabla_emprendedores" file="D:\capachica-project\turismo-backend\tests\Unit\Models\EmprendedorTest.php" line="278" class="Tests\Unit\Models\EmprendedorTest" classname="Tests.Unit.Models.EmprendedorTest" assertions="1" time="0.647414"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Services\AsociacionesServiceTest" file="D:\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" tests="11" assertions="29" errors="0" failures="0" skipped="0" time="9.543100">
+        <testcase name="puede_obtener_todas_las_asociaciones_paginadas" file="D:\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="35" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="4" time="1.874017"/>
+        <testcase name="puede_obtener_una_asociacion_por_id" file="D:\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="53" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="3" time="0.939933"/>
+        <testcase name="retorna_null_cuando_asociacion_no_existe" file="D:\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="70" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="1" time="0.986745"/>
+        <testcase name="puede_obtener_asociacion_con_emprendedores" file="D:\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="80" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="3" time="1.014999"/>
+        <testcase name="puede_crear_nueva_asociacion_sin_imagen" file="D:\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="101" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="4" time="1.513606"/>
+        <testcase name="puede_actualizar_asociacion_existente" file="D:\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="129" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="5" time="0.605399"/>
+        <testcase name="retorna_null_al_actualizar_asociacion_inexistente" file="D:\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="158" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="1" time="0.364465"/>
+        <testcase name="puede_eliminar_asociacion_existente" file="D:\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="171" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="2" time="0.350515"/>
+        <testcase name="retorna_false_al_eliminar_asociacion_inexistente" file="D:\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="189" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="1" time="0.434113"/>
+        <testcase name="puede_obtener_asociaciones_por_municipalidad" file="D:\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="199" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="4" time="0.675262"/>
+        <testcase name="maneja_excepcion_en_creacion" file="D:\capachica-project\turismo-backend\tests\Unit\Services\AsociacionesServiceTest.php" line="226" class="Tests\Unit\Services\AsociacionesServiceTest" classname="Tests.Unit.Services.AsociacionesServiceTest" assertions="1" time="0.784045"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Services\EmprendedoresServiceTest" file="D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php" tests="15" assertions="28" errors="3" failures="0" skipped="0" time="9.407682">
+        <testcase name="getAll_retorna_paginacion_correcta" file="D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php" line="40" class="Tests\Unit\Services\EmprendedoresServiceTest" classname="Tests.Unit.Services.EmprendedoresServiceTest" assertions="4" time="1.933479"/>
+        <testcase name="getAll_filtra_por_usuario_actual_cuando_soloDelUsuarioActual_es_true" file="D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php" line="53" class="Tests\Unit\Services\EmprendedoresServiceTest" classname="Tests.Unit.Services.EmprendedoresServiceTest" assertions="3" time="1.033266"/>
+        <testcase name="getById_retorna_emprendedor_con_relaciones_o_null" file="D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php" line="73" class="Tests\Unit\Services\EmprendedoresServiceTest" classname="Tests.Unit.Services.EmprendedoresServiceTest" assertions="3" time="0.421425"/>
+        <testcase name="create_guarda_emprendedor_y_crea_sliders" file="D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php" line="86" class="Tests\Unit\Services\EmprendedoresServiceTest" classname="Tests.Unit.Services.EmprendedoresServiceTest" assertions="2" time="0.459624"/>
+        <testcase name="update_actualiza_emprendedor_y_sliders" file="D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php" line="130" class="Tests\Unit\Services\EmprendedoresServiceTest" classname="Tests.Unit.Services.EmprendedoresServiceTest" assertions="2" time="0.437355"/>
+        <testcase name="update_retorna_null_si_no_existe_emprendedor" file="D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php" line="177" class="Tests\Unit\Services\EmprendedoresServiceTest" classname="Tests.Unit.Services.EmprendedoresServiceTest" assertions="1" time="0.358086"/>
+        <testcase name="delete_elimina_emprendedor_y_sliders_y_detaches_administradores" file="D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php" line="184" class="Tests\Unit\Services\EmprendedoresServiceTest" classname="Tests.Unit.Services.EmprendedoresServiceTest" assertions="0" time="0.368284">
+          <error type="Error">Tests\Unit\Services\EmprendedoresServiceTest::delete_elimina_emprendedor_y_sliders_y_detaches_administradores&#13;
+Error: Class "Database\Factories\SliderFactory" not found
+&#13;
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:870
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\HasFactory.php:21
+D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php:187</error>
+        </testcase>
+        <testcase name="delete_retorna_false_si_no_existe_emprendedor" file="D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php" line="204" class="Tests\Unit\Services\EmprendedoresServiceTest" classname="Tests.Unit.Services.EmprendedoresServiceTest" assertions="1" time="0.326865"/>
+        <testcase name="findByCategory_retorna_coleccion" file="D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php" line="211" class="Tests\Unit\Services\EmprendedoresServiceTest" classname="Tests.Unit.Services.EmprendedoresServiceTest" assertions="2" time="0.565491"/>
+        <testcase name="findByAsociacion_retorna_coleccion" file="D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php" line="224" class="Tests\Unit\Services\EmprendedoresServiceTest" classname="Tests.Unit.Services.EmprendedoresServiceTest" assertions="0" time="0.326120">
+          <error type="Illuminate\Database\QueryException">Tests\Unit\Services\EmprendedoresServiceTest::findByAsociacion_retorna_coleccion&#13;
+Illuminate\Database\QueryException: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «emprendedores» viola la llave foránea «emprendedores_asociacion_id_foreign»
+DETAIL:  La llave (asociacion_id)=(1) no está presente en la tabla «asociaciones». (Connection: pgsql, SQL: insert into "emprendedores" ("nombre", "tipo_servicio", "descripcion", "ubicacion", "telefono", "email", "pagina_web", "horario_atencion", "precio_rango", "metodos_pago", "capacidad_aforo", "numero_personas_atiende", "comentarios_resenas", "imagenes", "categoria", "certificaciones", "idiomas_hablados", "opciones_acceso", "facilidades_discapacidad", "asociacion_id", "estado", "updated_at", "created_at") values (Hansen, Prohaska and Feil EIRL, Guía turístico, Consequatur quos culpa dolorem inventore nostrum unde consequatur. Ut tenetur cupiditate recusandae impedit ab. Dolor non sit est ducimus. Et maiores qui qui autem beatae accusamus eveniet. Quia quibusdam rem accusamus mollitia vitae minima sit. Ut quaerat harum iste iure consectetur sit., 5143 Kub Isle
+Peterberg, MI 34084-5940, +51 960982214, pacocha.darryl@treutel.biz, ?, Martes a Domingo: 8:00 AM - 5:00 PM, S/ 1000 a más, ["efectivo","tarjeta_credito","yape","plin","transferencia"], 122, 25, Quibusdam debitis et aut ab nesciunt id. Nesciunt est commodi suscipit perferendis maxime., ["https:\/\/via.placeholder.com\/800x600.png\/00ffbb?text=business+emprendimiento+doloribus","https:\/\/via.placeholder.com\/800x600.png\/000044?text=business+emprendimiento+et","https:\/\/via.placeholder.com\/800x600.png\/003366?text=business+emprendimiento+magni","https:\/\/via.placeholder.com\/800x600.png\/008811?text=business+emprendimiento+ipsam"], Deportes, ["DIRCETUR"], ["espa\u00f1ol","ingl\u00e9s","quechua"], ["vehiculo_propio","transporte_publico"], 0, 1, 1, 2025-05-31 22:37:05, 2025-05-31 22:37:05) returning "id")
+&#13;
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:382
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php:24
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3769
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2208
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1408
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1373
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1212
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:351
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:274
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:346
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:306
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:296
+D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php:227</error>
+        </testcase>
+        <testcase name="search_retorna_coleccion" file="D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php" line="237" class="Tests\Unit\Services\EmprendedoresServiceTest" classname="Tests.Unit.Services.EmprendedoresServiceTest" assertions="3" time="0.533116"/>
+        <testcase name="getWithRelations_retorna_emprendedor_con_relaciones" file="D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php" line="251" class="Tests\Unit\Services\EmprendedoresServiceTest" classname="Tests.Unit.Services.EmprendedoresServiceTest" assertions="0" time="0.701761">
+          <error type="Illuminate\Database\QueryException">Tests\Unit\Services\EmprendedoresServiceTest::getWithRelations_retorna_emprendedor_con_relaciones&#13;
+Illuminate\Database\QueryException: SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «reserva_detalle»
+LINE 1: ... as "pivot_updated_at" from "reservas" inner join "reserva_d...
+                                                             ^ (Connection: pgsql, SQL: select "reservas".*, "reserva_detalle"."emprendedor_id" as "pivot_emprendedor_id", "reserva_detalle"."reserva_id" as "pivot_reserva_id", "reserva_detalle"."descripcion" as "pivot_descripcion", "reserva_detalle"."cantidad" as "pivot_cantidad", "reserva_detalle"."created_at" as "pivot_created_at", "reserva_detalle"."updated_at" as "pivot_updated_at" from "reservas" inner join "reserva_detalle" on "reservas"."id" = "reserva_detalle"."reserva_id" where "reserva_detalle"."emprendedor_id" in (69))
+&#13;
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:822
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:776
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:395
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3107
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3092
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3679
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3091
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:875
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\BelongsToMany.php:910
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php:175
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:923
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:892
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:854
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Concerns\BuildsQueries.php:366
+D:\capachica-project\turismo-backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:537
+D:\capachica-project\turismo-backend\app\Services\EmprendedoresService.php:231
+D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php:255</error>
+        </testcase>
+        <testcase name="getByUserId_retorna_emprendedores_de_usuario" file="D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php" line="267" class="Tests\Unit\Services\EmprendedoresServiceTest" classname="Tests.Unit.Services.EmprendedoresServiceTest" assertions="3" time="0.492618"/>
+        <testcase name="esAdministrador_retorna_true_o_false" file="D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php" line="280" class="Tests\Unit\Services\EmprendedoresServiceTest" classname="Tests.Unit.Services.EmprendedoresServiceTest" assertions="2" time="0.435238"/>
+        <testcase name="esAdministradorPrincipal_retorna_true_o_false" file="D:\capachica-project\turismo-backend\tests\Unit\Services\EmprendedoresServiceTest.php" line="291" class="Tests\Unit\Services\EmprendedoresServiceTest" classname="Tests.Unit.Services.EmprendedoresServiceTest" assertions="2" time="1.014954"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="26" assertions="162" errors="0" failures="0" skipped="0" time="20.468080">
+      <testsuite name="Tests\Feature\Controllers\AsociacionControllerTest" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" tests="25" assertions="132" errors="0" failures="0" skipped="0" time="19.508648">
+        <testcase name="puede_listar_todas_las_asociaciones" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="66" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="54" time="1.487050"/>
+        <testcase name="puede_listar_asociaciones_con_paginacion_personalizada" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="104" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="4" time="1.103477"/>
+        <testcase name="puede_mostrar_una_asociacion_especifica" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="124" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="2" time="0.686761"/>
+        <testcase name="retorna_404_cuando_asociacion_no_existe" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="147" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="2" time="0.557531"/>
+        <testcase name="admin_puede_crear_nueva_asociacion" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="161" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="3" time="0.876592"/>
+        <testcase name="usuario_normal_no_puede_crear_asociacion" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="192" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="1" time="0.934013"/>
+        <testcase name="usuario_no_autenticado_no_puede_crear_asociacion" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="210" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="1" time="0.635636"/>
+        <testcase name="falla_validacion_al_crear_asociacion_sin_datos_requeridos" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="226" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="5" time="0.850294"/>
+        <testcase name="falla_validacion_con_email_invalido" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="249" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="3" time="0.869193"/>
+        <testcase name="falla_validacion_con_municipalidad_inexistente" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="269" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="3" time="0.882379"/>
+        <testcase name="admin_puede_actualizar_asociacion_existente" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="288" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="3" time="0.624147"/>
+        <testcase name="usuario_normal_no_puede_actualizar_asociacion" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="322" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="1" time="0.537319"/>
+        <testcase name="retorna_404_al_actualizar_asociacion_inexistente" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="343" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="2" time="0.660171"/>
+        <testcase name="falla_validacion_estado_con_valor_invalido" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="365" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="3" time="0.693266"/>
+        <testcase name="admin_puede_eliminar_asociacion_existente" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="387" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="3" time="0.695250"/>
+        <testcase name="usuario_normal_no_puede_eliminar_asociacion" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="412" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="1" time="1.048236"/>
+        <testcase name="retorna_404_al_eliminar_asociacion_inexistente" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="429" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="2" time="0.824488"/>
+        <testcase name="puede_obtener_emprendedores_de_asociacion" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="446" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="6" time="0.717785"/>
+        <testcase name="retorna_404_al_obtener_emprendedores_de_asociacion_inexistente" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="475" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="2" time="0.954658"/>
+        <testcase name="puede_obtener_asociaciones_por_municipalidad" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="489" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="6" time="0.649395"/>
+        <testcase name="maneja_error_interno_del_servidor" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="518" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="1" time="0.627410"/>
+        <testcase name="respuesta_json_tiene_estructura_correcta_en_exito" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="541" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="16" time="0.637738"/>
+        <testcase name="respuesta_json_tiene_estructura_correcta_en_error" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="575" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="3" time="0.790926"/>
+        <testcase name="imagen_url_es_correcta_cuando_hay_imagen" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="590" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="3" time="0.537929"/>
+        <testcase name="imagen_url_es_null_cuando_no_hay_imagen" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\AsociacionControllerTest.php" line="610" class="Tests\Feature\Controllers\AsociacionControllerTest" classname="Tests.Feature.Controllers.AsociacionControllerTest" assertions="2" time="0.627002"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\Controllers\DashboardControllerTest" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\DashboardControllerTest.php" tests="1" assertions="30" errors="0" failures="0" skipped="0" time="0.959432">
+        <testcase name="puede_obtener_el_resumen_del_dashboard" file="D:\capachica-project\turismo-backend\tests\Feature\Controllers\DashboardControllerTest.php" line="48" class="Tests\Feature\Controllers\DashboardControllerTest" classname="Tests.Feature.Controllers.DashboardControllerTest" assertions="30" time="0.959432"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
